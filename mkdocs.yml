@@ -1,0 +1,92 @@
+site_name: SITREP ISR — Docs
+site_description: Pipeline documentation for SITREP ISR — how situation reports and simulations are generated.
+site_url: https://docs.sitrepisr.com/
+repo_url: https://github.com/SITREP-Israel/Docs
+repo_name: SITREP-Israel/Docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Pipelines:
+    - Overview: pipelines/index.md
+    - SITREP generation: pipelines/sitrep-generation.md
+    - Simulation runner: pipelines/simulation-runner.md
+    - Audio / podcast: pipelines/audio.md
+    - Publication & delivery: pipelines/publication.md
+  - Operations:
+    - Sources & whitelist: operations/sources.md
+    - Triggering runs: operations/triggering.md
+    - Admin surface: operations/admin.md
+  - Reference:
+    - Glossary: reference/glossary.md
+    - Repositories: reference/repos.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SITREP-Israel
+    - icon: fontawesome/solid/globe
+      link: https://sitrepisr.com
+
+copyright: >
+  Documentation for the SITREP ISR project. Content licensed CC BY 4.0.
