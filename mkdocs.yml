@@ -60,6 +60,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
@@ -73,6 +76,10 @@ nav:
     - Simulation runner: pipelines/simulation-runner.md
     - Audio / podcast: pipelines/audio.md
     - Publication & delivery: pipelines/publication.md
+  - Sources:
+    - Overview: sources/index.md
+    - Full list: sources/list.md
+    - Suggest a source: sources/suggest.md
   - Operations:
     - Sources & whitelist: operations/sources.md
     - Triggering runs: operations/triggering.md
@@ -82,11 +89,14 @@ nav:
     - Repositories: reference/repos.md
 
 extra:
+  homepage: https://sitrepisr.com
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/SITREP-Israel
     - icon: fontawesome/solid/globe
       link: https://sitrepisr.com
+      name: sitrepisr.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/SITREP-Israel
+      name: SITREP-Israel on GitHub
 
 copyright: >
   Documentation for the SITREP ISR project. Content licensed CC BY 4.0.
