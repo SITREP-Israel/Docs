@@ -1,0 +1,56 @@
+.md-mermaid-container {
+  position: relative;
+  margin: 1.25rem 0;
+}
+
+.md-mermaid-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.md-mermaid-download {
+  font-family: var(--md-text-font, system-ui), sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  background: var(--md-default-bg-color, #fff);
+  color: var(--md-default-fg-color--light, #555);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.md-mermaid-download:hover {
+  border-color: var(--md-accent-fg-color, #e53935);
+  color: var(--md-accent-fg-color, #e53935);
+}
+
+.md-mermaid-download:active {
+  transform: translateY(1px);
+}
+
+/* Credits footer */
+.md-credits {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest, #eee);
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light, #666);
+}
+
+.md-credits a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--md-default-fg-color--lightest, #ddd);
+  text-underline-offset: 3px;
+}
+
+.md-credits a:hover {
+  color: var(--md-accent-fg-color, #e53935);
+  text-decoration-color: currentColor;
+}

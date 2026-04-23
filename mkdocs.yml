@@ -67,6 +67,12 @@ markdown_extensions:
 plugins:
   - search
 
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/mermaid-download.js
+
 nav:
   - Home: index.md
   - Architecture: architecture.md
@@ -87,6 +93,7 @@ nav:
   - Reference:
     - Glossary: reference/glossary.md
     - Repositories: reference/repos.md
+    - Credits: reference/credits.md
 
 extra:
   homepage: https://sitrepisr.com

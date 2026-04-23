@@ -67,3 +67,11 @@ It is **not** a primary reporting outlet. Nothing on the site is first-hand jour
 | [SITREP-ISR-Admin](https://github.com/danielrosehill/SITREP-ISR-Admin) | Backoffice UI, newsletter send, manual SITREP trigger. |
 | [Grounding-Sources](https://github.com/SITREP-Israel/Grounding-Sources) | Public source inventory, contributor-editable. |
 | [Docs](https://github.com/SITREP-Israel/Docs) | You are here. |
+
+---
+
+<div class="md-credits" markdown>
+
+**Design inspiration.** The pipeline-as-graph presentation in these docs borrows from [Snowglobe](https://snowglobe.so/) and [LLM Council](https://github.com/karpathy/llm-council) by [Andrej Karpathy](https://karpathy.ai/). Neither is responsible for how the ideas are applied here. See [Credits](reference/credits.md).
+
+</div>
